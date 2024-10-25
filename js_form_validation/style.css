@@ -1,0 +1,49 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: minmax(300px, 400px);
+}
+
+fieldset {
+  display: grid;
+  grid-auto-rows: 1fr;
+  row-gap: 2rem;
+  border: 5px solid burlywood;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+legend {
+  font: 600 1.4rem "Times New Roman";
+}
+
+label {
+  font: 700 1.2rem "Times New Roman";
+  color: rgb(10, 5, 28);
+}
+
+input {
+  border: 2px solid black;
+}
+
+input:user-invalid {
+  border: 2px solid red;
+}
+
+input:user-valid {
+  border: 2px solid green;
+}
+
+button {
+  justify-self: start;
+  width: 80px;
+  height: 30px;
+  border: 2px solid black;
+}
+
+select {
+    border: 2px solid black;
+    padding: 0.1rem;
+}
