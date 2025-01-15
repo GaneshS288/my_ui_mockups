@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Roboto";
+    font-weight: 300;
+    src: url(./fonts/roboto-variablefont_wdthwght-webfont.woff) format("woff"),
+         url(./fonts/roboto-variablefont_wdthwght-webfont.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    font-weight: 900;
+    src: url(./fonts/playfairdisplay-variablefont_wght-webfont.woff) format("woff"),
+         url(./fonts/playfairdisplay-variablefont_wght-webfont.woff2) format("woff2");
+}
+
+:root {
+    --brown: #824936;
+    --cream:  #F3EED9;
+    --blueslate: #222C2A;
+}
+
+body {
+    margin: 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    gap: 2em;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+section {
+    padding: 4em 0;
+}
+
+.hero {
+    min-height: 660px;
+    background: var(--cream);
+}
+
+.hero > .container {
+    padding: 0;
+}
+
+.hero__subheading {
+    font: 300 18px "Roboto";
+    color: var(--blueslate);
+    text-transform: uppercase;
+}
+
+.hero__heading {
+    font: 900 60px "Playfair Display Black";
+    color: var(--brown);
+}
+
+.primary-content__heading {
+    font: 900 36px "Playfair Display";
+    color: var(--brown);
+}
+
+.primary-content__text {
+    font: 400 21px "Roboto";
+    color: var(--blueslate);
+}
+
+.secondary-content__heading {
+    font: 900 36px "Playfair Display";
+    color: white;
+}
+
+.secondary-content__text {
+    font: 400 21px "Roboto";
+    color: white;
+}
+
+.secondary-content:nth-child(2) {
+    background: var(--blueslate);
+}
+
+.secondary-content:last-child {
+    background-color: var(--brown);
+}
